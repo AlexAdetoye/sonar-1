@@ -1,7 +1,5 @@
 FROM node:18.13.0
 
-
-
 # Create app directory
 WORKDIR /usr/src/app
 
@@ -13,9 +11,6 @@ COPY package*.json ./
 RUN npm install
 # If you are building your code for production
 # RUN npm install --only=production
-
-RUN yum install openscap-scanner -y
-RUN yum install scap-security-guide -y
 
 # Bundle app source
 COPY . .
