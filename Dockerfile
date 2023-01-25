@@ -15,7 +15,7 @@ RUN npm install
 # RUN npm install --only=production
 
 RUN yum install openscap-scanner -y
-RUN um install scap-security-guide -y
+RUN yum install scap-security-guide -y
 
 # Bundle app source
 COPY . .
