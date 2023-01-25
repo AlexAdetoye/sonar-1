@@ -18,6 +18,7 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
-CMD [ "npm", "start" ]
+CMD ["node", "server"]
+#CMD [ "npm", "start" ]
 
 # This is dummy change for git demo
